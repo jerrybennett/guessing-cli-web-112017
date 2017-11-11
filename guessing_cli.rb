@@ -5,6 +5,7 @@ def run_guessing_game
     puts "Guess a number between 1 and 6."
     guess = gets.chomp
     num = rand(1..6)
+    binding.pry
       if guess == "exit"
         puts "Goodbye!"
         break
