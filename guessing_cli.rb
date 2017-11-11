@@ -1,3 +1,4 @@
+require.pry
 # Code your solution here!
 def run_guessing_game
   while true
@@ -14,3 +15,5 @@ def run_guessing_game
       end
   end
 end
+
+run_guessing_game
