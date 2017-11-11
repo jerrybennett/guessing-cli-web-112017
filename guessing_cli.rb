@@ -5,11 +5,11 @@ def run_guessing_game
     puts "Guess a number between 1 and 6."
     guess = gets.chomp
     num = rand(1..6)
-    binding.pry
       if guess == "exit"
         puts "Goodbye!"
         break
       elsif guess.to_i != num
+        binding.pry
         puts "The computer guessed #{num}."
       else guess.to_i == num
         puts "You guessed the correct number!"
