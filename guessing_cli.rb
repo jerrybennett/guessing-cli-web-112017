@@ -1,4 +1,3 @@
-require 'pry'
 # Code your solution here!
 def run_guessing_game
   while true
@@ -9,12 +8,9 @@ def run_guessing_game
         puts "Goodbye!"
         break
       elsif guess.to_i != num
-        binding.pry
         puts "The computer guessed #{num}."
       else guess.to_i == num
         puts "You guessed the correct number!"
       end
   end
 end
-
-run_guessing_game
